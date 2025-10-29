@@ -1,0 +1,37 @@
+# ---- Global ----
+node_modules/
+.env
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Frontend ----
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/node_modules/
+frontend/package-lock.json
+
+# Vite & build outputs
+frontend/.vercel/
+frontend/.netlify/
+
+# ---- Backend ----
+backend/dist/
+backend/.env
+backend/node_modules/
+backend/prisma/dev.db
+backend/package-lock.json
+
+# Prisma
+backend/prisma/migrations/
+backend/.vercel/
+backend/.netlify/
+
+# ---- Misc ----
+*.sqlite
+*.sqlite-journal
+.idea/
+.vscode/

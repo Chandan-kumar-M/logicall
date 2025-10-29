@@ -1,0 +1,20 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL") // set to mysql://user:pass@host:3306/dbname
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Movie {
+  id        Int     @id @default(autoincrement())
+  title     String
+  type      String
+  director  String
+  budget    String?
+  location  String?
+  duration  String?
+  year      String?
+  createdAt DateTime @default(now())
+}
